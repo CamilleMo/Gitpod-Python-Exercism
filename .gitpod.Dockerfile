@@ -17,4 +17,8 @@ RUN sudo apt-get update && sudo apt-get install -y zsh && \
      sudo find /opt/conda/ -follow -type f -name '*.a' -delete && \
      sudo find /opt/conda/ -follow -type f -name '*.js.map' -delete && \
      sudo /opt/conda/bin/conda clean -afy && \
-     sudo chmod -R 777 /opt
+     sudo chmod -R 777 /opt && \
+     sudo wget https://github.com/exercism/cli/releases/download/v3.0.13/exercism-3.0.13-linux-x86_64.tar.gz && \
+     sudo tar -xvf exercism-3.0.13-linux-x86_64.tar.gz && \
+     sudo sudo mv exercism /usr/local/bin && \
+     sudo rm -rf https://github.com/exercism/cli/releases/download/v3.0.13/exercism-3.0.13-linux-x86_64.tar.gz
