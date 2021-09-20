@@ -12,3 +12,5 @@ vscode:
   extensions:
     - ms-python.python
     - yzhang.markdown-all-in-one
+    - eamodio.gitlens
+    - ahmadawais.shades-of-purple
